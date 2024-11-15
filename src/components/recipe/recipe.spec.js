@@ -3,7 +3,7 @@ import { assert } from 'chai';
 import { shallow } from 'enzyme';
 import Chance from 'chance';
 import Recipe from './recipe';
-import IngredientList from '../ingredientList/ingredientList';
+import IngredientList from '../../../../components/ingredientList/ingredientList';
 
 describe('Recipe', () => {
     const chance = new Chance();

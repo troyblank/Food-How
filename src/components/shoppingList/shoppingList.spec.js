@@ -4,7 +4,7 @@ import { shallow, mount } from 'enzyme';
 import sinon from 'sinon';
 import Chance from 'chance';
 import { Button, GetShoppingList, GotShoppingList, NoResultMessage } from '@troyblank/food-how-components';
-import ShoppingList from './shoppingList';
+import ShoppingList from '../../../../components/shoppingList/shoppingList';
 
 describe('Shopping List', () => {
     const chance = new Chance();
