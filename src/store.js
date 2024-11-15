@@ -1,6 +1,6 @@
 import { createStore, compose, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
-import { foodHowShoppingList } from './components/shoppingList/reducer';
+// import { foodHowShoppingList } from './components/shoppingList/reducer';
 import reducers from './reducers';
 
 const enhancers = compose(
@@ -10,10 +10,10 @@ const enhancers = compose(
 const store = createStore(reducers, enhancers);
 
 store.subscribe(() => {
-    const { shoppingListStore } = store.getState();
-    const { shoppingList } = shoppingListStore;
+    // const { shoppingListStore } = store.getState();
+    // const { shoppingList } = shoppingListStore;
 
-    localStorage.setItem(foodHowShoppingList, JSON.stringify(shoppingList));
+    // localStorage.setItem(foodHowShoppingList, JSON.stringify(shoppingList));
 });
 
 export default store;
