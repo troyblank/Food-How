@@ -3,8 +3,8 @@ import { assert } from 'chai';
 import { shallow } from 'enzyme';
 import sinon from 'sinon';
 import Chance from 'chance';
-import { IngredientListComponent } from './ingredientList';
-import Ingredient from '../ingredient/ingredient';
+import { IngredientListComponent } from '../../../../components/ingredientList/ingredientList';
+import Ingredient from '../../../../components/ingredient/ingredient';
 
 describe('IngredientList', () => {
     const chance = new Chance();
